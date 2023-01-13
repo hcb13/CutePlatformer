@@ -10,8 +10,19 @@ public class GotCollected : MonoBehaviour
                                                  "Melon",
                                                  "Key"};
 
+    [SerializeField]
+    private GameObject textItem;
 
     public Action<string> OnCollected = delegate { };
+
+    private void Awake()
+    {
+        CountItem _gameObject = textItem.GetComponent<CountItem>();
+        if (_gameObject != null) {
+            OnCollected += _gameObject.Count;
+        }
+    }
+
 
     public void OnGotCollected()
     {

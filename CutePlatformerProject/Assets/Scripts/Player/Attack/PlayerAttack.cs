@@ -27,10 +27,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if (isAttacking)
         {
-            Debug.Log("Attacking");
             if (collision.collider.CompareTag("HurtBox"))
             {
-                Debug.Log("Found enemy");
                 collision.collider.SendMessageUpwards("AddDamage");
             }
         }

@@ -6,7 +6,6 @@ public class EnemyHealth : MonoBehaviour
 {
    public void AddDamage()
     {
-        Debug.Log("Damage");
         //gameObject.SetActive(false);
         Destroy(gameObject);
     }

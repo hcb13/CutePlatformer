@@ -13,12 +13,7 @@ public class CountItem : MonoBehaviour
 
     private int amount = 0;
 
-    private void Awake()
-    {
-        GetComponent<GotCollected>().OnCollected += Count;
-    }
-
-    private void Count(string item)
+    public void Count(string item)
     {
         if(string.Equals(nameItem, item))
         {

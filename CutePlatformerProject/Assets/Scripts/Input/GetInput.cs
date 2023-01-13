@@ -8,11 +8,13 @@ public class GetInput : MonoBehaviour
     public Action<float> OnGetHorizontalAxis = delegate { };
     public Action<bool> OnGetButtonDownJump = delegate { };
     public Action<bool> OnGetButtonDownAttack = delegate { };
+    public Action<bool> OnGetButtonInteract = delegate { };
 
     public void Update()
     {
         OnGetHorizontalAxis?.Invoke(Input.GetAxisRaw("Horizontal"));
         OnGetButtonDownJump?.Invoke(Input.GetButtonDown("Jump"));
         OnGetButtonDownAttack?.Invoke(Input.GetButtonDown("Attack"));
+        OnGetButtonInteract?.Invoke(Input.GetButtonDown("Interact"));
     }
 }

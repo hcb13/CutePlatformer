@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 8985757634068407670}
   - component: {fileID: 3640754708091360444}
   - component: {fileID: 3628066469936019157}
-  m_Layer: 0
+  - component: {fileID: 877435843}
+  - component: {fileID: 877435844}
+  m_Layer: 11
   m_Name: Strawberry
-  m_TagString: Untagged
+  m_TagString: Items
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,3 +124,31 @@ CircleCollider2D:
   m_Offset: {x: 0.006205201, y: 0.009308025}
   serializedVersion: 2
   m_Radius: 0.070022464
+--- !u!114 &877435843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4608076483196901676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e30d2e221652b44294d0d2bc3c8c234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabCollectAnimation: {fileID: 6933631413724597469, guid: 64a0ffa7192c3b84b9e13ed5c6214137, type: 3}
+--- !u!114 &877435844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4608076483196901676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9204f25ae956b4ea86fa742058ec34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - Strawberry
+  textItem: {fileID: 0}
