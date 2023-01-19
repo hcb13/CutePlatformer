@@ -112,6 +112,10 @@ GameObject:
   - component: {fileID: 2528283463336600747}
   - component: {fileID: 7425160596320144829}
   - component: {fileID: 7399938547237288117}
+  - component: {fileID: 340542384464522496}
+  - component: {fileID: 7007575767701264708}
+  - component: {fileID: 2120098573372783982}
+  - component: {fileID: 7239669978348486174}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -205,7 +209,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: c53b8705b4aae7242bc074fb788b1645, type: 2}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -373,3 +377,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a61c74423ed4194f8271ab336ae7e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &340542384464522496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706041227497974049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e12bc6e49dd1f4ba97f35c998b57ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7007575767701264708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706041227497974049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77059ab3c5c562f49a3a41c2ee9a801f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoader: {fileID: 0}
+  idMapScene: 6
+--- !u!114 &2120098573372783982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706041227497974049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5aa80540d037ed4e9817c0ed787e83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 0}
+--- !u!114 &7239669978348486174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706041227497974049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77059ab3c5c562f49a3a41c2ee9a801f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoader: {fileID: 0}
+  idMapScene: 6

@@ -21,7 +21,7 @@ public class SetInventory : MonoBehaviour
 
     private void Awake()
     {
-        GetComponent<GotCollected>().OnCollected += Inventory;
+        //GetComponent<GotCollected>().OnCollected += Inventory;
     }
 
     private void Inventory(string item)

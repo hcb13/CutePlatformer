@@ -11,9 +11,6 @@ public class MoveSaw : MonoBehaviour
     private int target;
 
     [SerializeField]
-    private float waitTime = 3;
-
-    [SerializeField]
     private float _speed = 2f;
 
     [SerializeField]

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6780994853416865176}
   - component: {fileID: 3912534551082890750}
   - component: {fileID: 1072987132}
-  - component: {fileID: 1072987133}
+  - component: {fileID: 8691686426314237619}
   m_Layer: 11
   m_Name: Melon
   m_TagString: Items
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCollectAnimation: {fileID: 6933631413724597469, guid: 64a0ffa7192c3b84b9e13ed5c6214137, type: 3}
---- !u!114 &1072987133
+--- !u!114 &8691686426314237619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,6 +149,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9204f25ae956b4ea86fa742058ec34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - Melon
-  textItem: {fileID: 0}

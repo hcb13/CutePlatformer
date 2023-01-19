@@ -34,6 +34,10 @@ public class PlayerWalk : MonoBehaviour
 
     private void SetMovement(float horizontalInput)
     {
+        if (horizontalInput != 0)
+        {
+            _rigidbody.bodyType = RigidbodyType2D.Dynamic;
+        }
         _movement = new Vector2(horizontalInput, 0f);
     }
 }

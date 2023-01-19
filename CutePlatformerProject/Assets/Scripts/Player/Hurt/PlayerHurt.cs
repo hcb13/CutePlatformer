@@ -14,7 +14,9 @@ public class PlayerHurt : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+
         GetComponent<CheckPlayerGetHurt>().OnGetHurt += GotHurt;
+        OnGetHurt += GetComponent<PlayerRespawn>().Respawn;
     }
 
     private void GotHurt()

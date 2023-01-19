@@ -34,6 +34,7 @@ public class PlayerJump : MonoBehaviour
     {        
         if (buttonDown && _isGrounded)
         {
+            _rigibody.bodyType = RigidbodyType2D.Dynamic;
             _rigibody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
