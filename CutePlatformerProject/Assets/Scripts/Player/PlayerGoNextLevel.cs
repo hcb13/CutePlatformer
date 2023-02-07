@@ -7,25 +7,26 @@ public class PlayerGoNextLevel : MonoBehaviour
 {
 
     [SerializeField]
-    private LevelLoader levelLoader;
+    private GameObject panelLoadingLevel;
 
-    [SerializeField]
-    private int idMapScene = 6;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("LoadLevel"))
         {
-            StartCoroutine(FinishLevel());            
+            if (panelLoadingLevel != null)
+            {
+                panelLoadingLevel.SetActive(true);
+            }
         }
     }
 
-    private IEnumerator FinishLevel()
-    {
-        yield return new WaitForSecondsRealtime(1f);
+    //private IEnumerator FinishLevel()
+    //{
+    //    yield return new WaitForSecondsRealtime(1f);
 
-        levelLoader.NextLevel = idMapScene;
-        levelLoader.OnNextLevel();
+    //    levelLoader.NextLevel = idMapScene;
+    //    levelLoader.OnNextLevel();
 
-    }
+    //}
 }

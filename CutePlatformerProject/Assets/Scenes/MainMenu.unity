@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoader: {fileID: 366802553}
-  idMapScene: 6
+  idMapScene: 1
 --- !u!1 &1428610456
 GameObject:
   m_ObjectHideFlags: 0
