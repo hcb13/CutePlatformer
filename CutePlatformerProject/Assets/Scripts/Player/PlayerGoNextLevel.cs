@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerGoNextLevel : MonoBehaviour
 {
@@ -16,17 +17,24 @@ public class PlayerGoNextLevel : MonoBehaviour
         {
             if (panelLoadingLevel != null)
             {
-                panelLoadingLevel.SetActive(true);
+                StartCoroutine(LoadingLevel());
+            }
+            else
+            {
+                StartCoroutine(GoToMainMenu());
             }
         }
     }
 
-    //private IEnumerator FinishLevel()
-    //{
-    //    yield return new WaitForSecondsRealtime(1f);
+    private IEnumerator LoadingLevel()
+    {
+        yield return new WaitForSeconds(2f);
+        panelLoadingLevel.SetActive(true);
+    }
 
-    //    levelLoader.NextLevel = idMapScene;
-    //    levelLoader.OnNextLevel();
-
-    //}
+    private IEnumerator GoToMainMenu()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(0);
+    }
 }
