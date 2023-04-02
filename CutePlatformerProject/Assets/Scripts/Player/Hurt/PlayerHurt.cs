@@ -17,6 +17,7 @@ public class PlayerHurt : MonoBehaviour
 
         GetComponent<CheckPlayerGetHurt>().OnGetHurt += GotHurt;
         OnGetHurt += GetComponent<PlayerRespawn>().Respawn;
+        OnGetHurt += GetComponent<DecreaseLife>().LostLife;
     }
 
     private void GotHurt()

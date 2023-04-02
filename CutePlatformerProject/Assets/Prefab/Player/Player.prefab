@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 1736238164635698833}
   - component: {fileID: 5422861268600383308}
   - component: {fileID: 2528283463336600747}
+  - component: {fileID: 7596999807988973102}
   - component: {fileID: 7425160596320144829}
   - component: {fileID: 7399938547237288117}
   - component: {fileID: 340542384464522496}
@@ -249,6 +250,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1008146862468912157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +355,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1.5
+--- !u!114 &7596999807988973102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706041227497974049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc01ad952f5b044c80d24589ba6ec84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life1: {fileID: 0}
+  life2: {fileID: 0}
+  life3: {fileID: 0}
 --- !u!114 &7425160596320144829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,8 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77059ab3c5c562f49a3a41c2ee9a801f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelLoader: {fileID: 0}
-  idMapScene: 6
+  panelLoadingLevel: {fileID: 0}
 --- !u!114 &2120098573372783982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,5 +444,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77059ab3c5c562f49a3a41c2ee9a801f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelLoader: {fileID: 0}
-  idMapScene: 6
+  panelLoadingLevel: {fileID: 0}

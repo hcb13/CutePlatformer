@@ -21,7 +21,7 @@ public class PlayerGoNextLevel : MonoBehaviour
             }
             else
             {
-                StartCoroutine(GoToMainMenu());
+                //StartCoroutine(GoToMainMenu());
             }
         }
     }
