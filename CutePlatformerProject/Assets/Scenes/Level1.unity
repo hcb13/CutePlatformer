@@ -18963,6 +18963,14 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1525439452}
+    - target: {fileID: 7007575767701264708, guid: 67ff2812958765c4da59c25e70a1bc60, type: 3}
+      propertyPath: nextLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239669978348486174, guid: 67ff2812958765c4da59c25e70a1bc60, type: 3}
+      propertyPath: nextLevel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7239669978348486174, guid: 67ff2812958765c4da59c25e70a1bc60, type: 3}
       propertyPath: levelLoader
       value: 
