@@ -17,14 +17,17 @@ public class PlayerGoNextLevel : MonoBehaviour
     {
         if (collision.CompareTag("LoadLevel"))
         {            
-            if (nextLevel != 0)
+            if (panelLoadingLevel != null && nextLevel != 0)
             {
                 panelLoadingLevel.SetActive(true);
                 StartCoroutine(LoadingLevel());
             }
             else
             {
-                StartCoroutine(GoToMainMenu());
+                if (nextLevel == 0)
+                {
+                    StartCoroutine(GoToMainMenu());
+                }
             }
         }
     }
