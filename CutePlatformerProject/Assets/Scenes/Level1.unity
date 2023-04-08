@@ -19114,6 +19114,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 130277351}
     m_Modifications:
+    - target: {fileID: 6284337513447164149, guid: 347a1c76770988549ac283c93aa1ed02, type: 3}
+      propertyPath: nextLevel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6284337513447164152, guid: 347a1c76770988549ac283c93aa1ed02, type: 3}
       propertyPath: m_Name
       value: Crossfade
@@ -20288,7 +20292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123256910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.7913523, y: -3.2115054, z: -10}
+  m_LocalPosition: {x: -6.791874, y: -3.211505, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

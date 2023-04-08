@@ -38,8 +38,16 @@ public class LevelLoader : MonoBehaviour
 
     private IEnumerator LoadNextLevel()
     {
+        nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+
+        if (nextLevel >= SceneManager.sceneCountInBuildSettings)
+        {
+            nextLevel = 0;            
+        }
+
         if (!SceneManager.GetSceneByBuildIndex(nextLevel).isLoaded)
         {
+
             var loadScene = SceneManager.LoadSceneAsync(nextLevel);
 
             while (!loadScene.isDone)

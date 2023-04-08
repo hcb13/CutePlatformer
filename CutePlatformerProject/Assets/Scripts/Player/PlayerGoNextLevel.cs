@@ -16,18 +16,10 @@ public class PlayerGoNextLevel : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("LoadLevel"))
-        {            
-            if (panelLoadingLevel != null && nextLevel != 0)
+        {   
+            if (panelLoadingLevel != null)
             {
-                panelLoadingLevel.SetActive(true);
                 StartCoroutine(LoadingLevel());
-            }
-            else
-            {
-                if (nextLevel == 0)
-                {
-                    StartCoroutine(GoToMainMenu());
-                }
             }
         }
     }
@@ -38,9 +30,4 @@ public class PlayerGoNextLevel : MonoBehaviour
         panelLoadingLevel.SetActive(true);
     }
 
-    private IEnumerator GoToMainMenu()
-    {
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(0);
-    }
 }
